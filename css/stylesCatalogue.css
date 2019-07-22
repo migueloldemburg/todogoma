@@ -1,0 +1,478 @@
+.navbar{
+	margin-bottom:0;
+}
+
+.jumbotron{
+	background:#22313F;
+	color:#FFF;
+	padding: 20px 0px;
+	margin-bottom:1px;
+}
+
+.breadcrumb{
+	margin-bottom:10px;
+}
+
+/* POST */
+
+.main{ 
+	margin-top:10px;
+	margin-bottom:30px;
+	min-height:640px;
+}
+
+.marcas_div{
+	border:1px solid #CCC;
+	width:220px;
+	height:120px;
+	margin:10px;
+	display:inline-block;
+	padding:10px;
+	cursor:pointer;
+	position: relative;	
+}
+
+	.marcas_div img{
+		width:100%;
+		height:100%;
+		vertical-align:top;
+	}
+	.marcas_div:hover{
+			border:1px solid #999;
+	}
+	.marcas_div .divName{
+		position: absolute;
+		top:-20px;
+		left:35%;
+		display: none;
+		color:#666;
+	}
+	
+.modelos_names{
+	border:1px solid #CCC;
+	min-width:150px;
+	min-height:40px;
+	margin:6px;
+	display:inline-block;
+	padding:10px;
+	padding-bottom:0px;
+	cursor:pointer;
+	position: relative;
+	vertical-align:top;
+	font-size:12px;
+	color:#333;
+	font-weight:bold;
+}
+	.modelos_names:hover{
+		border:1px solid #999;
+		background:rgba(0,0,0,0.8);
+		color:#FFF;
+	}
+
+.modelos_div{
+	border:1px solid #CCC;
+	width:220px;
+	min-height:164px;
+	margin:10px;
+	display:inline-block;
+	padding:10px;
+	padding-bottom:0px;
+	cursor:pointer;
+	position: relative;
+	vertical-align:top;
+}
+
+
+	.modelos_div .divName{
+		position: absolute;
+		width:600px;
+		min-height:200px;
+		padding:3px;
+		border:#CCC solid 2px;;
+		top:-20px;
+		display: none;
+		color:#999;
+		z-index:4;
+	}
+		.modelos_div .divName img{
+			width:100%;
+			height:auto;
+		}
+	.modelos_div .img_container{
+		width:100%;
+		height:110px;
+	}
+
+		.modelos_div .img_container img{
+			width:100%;
+			height:100%;
+			vertical-align:top;
+		}
+	.modelos_div .modelo_nom{
+		font-size:12px;
+		color:#666;
+		padding:3px;
+		margin-bottom:0px;
+	}
+		
+	.modelos_div:hover{
+			border:1px solid #999;
+	}
+	
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 0%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay.over2{
+	height: 100%;
+    width: 0%;
+}
+
+.overlay img{
+	width:60%;
+	height:auto;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 70px; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+	.carousel-inner > .item > img{
+		height:450px;
+		width:auto;
+		margin:auto;
+	}
+	
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important; /* Override the font-size specified earlier (36px) for all navigation links */
+}
+
+.itemInfo{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	margin:auto;
+	text-align:center;
+	line-height: 2px;
+}
+
+	.itemInfo .info{
+		width:35%;
+		height:90px;
+		background:#000;
+		display:inline-block;
+		vertical-align:bottom;
+		padding: 7px;
+		padding-left: 15px;
+		padding-bottom: 0;
+		text-align: left;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
+	.itemInfo .info .p{
+		margin: 0;
+		font-size: 12px;
+		color: #fff;
+		font-family: sans-serif;
+	}
+	.itemInfo .info .p strong{
+		float: right;
+		margin-right: 20px;
+	}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+}
+	
+.categorias_div{
+	border:1px solid #CCC;
+	vertical-align: top;
+	width:220px;
+	height:120px;
+	margin:10px;
+	display:inline-block;
+	padding:10px;
+	padding-top:35px;
+	font-size:20px;
+	cursor:pointer;
+	background: #ECECEC;
+}
+.categorias_div img{
+	width:100%;
+	height:100%;
+	vertical-align:top;
+	cursor:pointer;
+}
+
+.categorias_div:hover{
+		border:1px solid #999;
+		padding-left:5px;
+}
+
+/* Contenedores Laterales */
+.lateral{
+	min-height:110px;
+	background:#f5f5f5;
+	border-radius:6px;
+	padding:3px;
+	box-sizing: border-box;
+}
+
+	.lateral .contenedor{
+		position:relative;
+		min-height:200px;
+		width:100%;
+		background:white;
+		margin-bottom:5px;
+		margin-top:5px;
+		padding:20px;
+		padding-top:15px;
+	}
+	
+	.lateral .contenedor.imagen{
+		padding:5px;
+	}
+	
+		
+	.lateral .contenedor .form-group{
+		margin-bottom:5px;
+	}
+	.lateral .contenedor label{
+		font-size:12px;
+	}
+	.lateral .contenedor .form-control{
+		height:26px;
+		padding:4px 12px;
+		font-size:12px;
+	}
+	.lateral .contenedor img{
+		width:100%;
+		height:auto;
+	}
+.modelo_p{
+	font-size:18px;
+}
+
+/* Contenedores Laterales */
+/* Contenedor CENTRAL */
+
+.caja_producto{
+	width:210px;
+	min-height:330px;
+	background:white;
+	padding: 5px;
+	border:1px solid #D2D7D3;
+	margin-right:8px;
+	margin-bottom:10px;
+	display:inline-block;
+	vertical-align: top;
+	position:relative;
+}
+	.caja_producto:hover{
+		background: #DADFE1;
+	}
+	.caja_producto .img_cp{
+		background: white;
+	}
+		.caja_producto .img_cp img{
+			width: 100%;
+			height: 190px;
+		}
+	.caja_producto .ref{
+		font-weight: bold;
+		margin:4px;
+		color:#666;
+		font-size:12px;
+	}
+	.caja_producto .nombre{
+		font-size:12px;
+		font-weight: bold;
+		margin:4px;
+;
+	}
+	.caja_producto .precio{
+		margin-left:4px;
+		font-weight: bold;
+		vertical-align:top;
+		color:#333;
+	}
+	.caja_producto .stock{
+		color:#36F;
+		font-weight: bold;
+	}
+	.caja_producto .stock_low{
+		color:#DD2024;
+		font-weight: bold;
+	}
+	.caja_producto .button_div{
+		position:absolute;
+		bottom:0px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 7px;
+		/*display: none;*/
+	}
+		.caja_producto .button_div .btn-xs{
+			padding: 4px 6px;
+		}
+
+.img_producto{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border: 1px solid #CCC;
+}
+.img_producto img{ 
+	width: 100%;
+	height: 100%;
+}
+
+.nom_producto{
+	margin-top: 10px;
+	margin-left: 100px;
+	font-weight: bold;
+}
+
+.ref_producto{
+	margin-top: 0px;
+	margin-left: 100px;
+	color:#6C7A89;
+	font-size: 12px;
+}
+
+.border{
+	border:1px solid #CCC;
+	border-radius: 3px;
+	padding: 4px;
+}
+.border.x{
+	padding: 5px;
+}
+.cantidad{
+	min-width:2px;
+	height: 10px;
+	padding: 3px 4px;
+	margin:0px 2px;
+	box-sizing: border-box;;
+	border:1px solid #CCC;
+}
+
+.div_cliente{
+	width: 310px;
+	min-height:340px;
+	margin-bottom: 25px;
+}
+	.div_cliente .form-group{
+		margin-bottom:2px;
+	}
+	.div_cliente label{
+		font-size:12px;
+	}
+	.div_cliente .form-control{
+		height:26px;
+		padding:4px 12px;
+		font-size:12px;
+	}
+
+/*.modal-content{
+	width:500px;
+}*/
+
+.controllers{
+	cursor:pointer;
+}
+
+	.controllers:hover{
+		background: #CCC;
+	}
+
+/* Contenedor CENTRAL */
+
+.checkSuccess{
+	width:90%;
+	min-height: 100px;
+	margin: auto;
+	border-radius:5px;
+	background: #59ABE3;
+}
+
+	.checkSuccess .titulo{
+		padding: 50px 50px 0px 50px;
+		margin: 0;
+		font-size:25px;
+		color:white;
+		text-align: center;;
+	}
+	.checkSuccess .codigo{
+		text-align: center;
+		color: #000;
+		font-size: 14px;
+		padding-bottom: 15px;
+	}
+
+.divModelosCompatibles{
+	background: white;
+	width: 40%;
+	margin:auto;
+	height: 350px;
+	padding: 10px;
+	padding-left: 25px;
+	color: #000;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	border: 3px solid #000;
+}
+
+.divModelosCompatibles h5, h6{
+	text-align: left;
+	color: #000;
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 768px){
+
+}
