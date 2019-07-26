@@ -1,5 +1,4 @@
 <?php
-//I added this line
 session_start();
 function __autoload($nombre_clase)
 {
